@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>我的留学规划｜申请准备、费用与就业</title>
+  <meta name="description" content="给家人看的留学规划：个人现状、申请准备、学校与专业、费用、安全及毕业后的就业选择。">
+  <meta property="og:title" content="我的留学规划｜给家人看的讨论稿">
+  <meta property="og:description" content="2028 年入学目标：准备什么、需要花多少、毕业后可以怎样找工作。">
+  <style>
+    :root { --ink:#182329; --muted:#4f6267; --paper:#fff; --line:#d7e1df; --teal:#087f78; --teal-light:#e7f5f1; --coral:#d4533e; --coral-light:#fff1ec; --gold:#9a6d08; --gold-light:#fff5d8; --blue:#245c88; --blue-light:#edf4fa; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif; line-height:1.75; font-size:17px; }
+    a { color:var(--blue); text-underline-offset:3px; }
+    a:hover { color:var(--coral); }
+    .wrap { width:min(1080px,calc(100% - 40px)); margin:auto; }
+    header { background:#f4f8f6; border-bottom:1px solid var(--line); }
+    .topline { padding:18px 0; display:flex; align-items:center; justify-content:space-between; gap:20px; font-size:13px; color:var(--muted); }
+    .brand { font-weight:800; color:var(--ink); }
+    .hero { padding:42px 0 52px; display:grid; grid-template-columns:minmax(0,1.25fr) minmax(270px,.75fr); gap:42px; align-items:center; }
+    .eyebrow,.num { color:var(--teal); font-size:13px; font-weight:800; }
+    h1 { margin:8px 0 14px; font-size:clamp(32px,4vw,48px); line-height:1.23; }
+    h2 { margin:0 0 10px; font-size:29px; line-height:1.35; }
+    h3 { margin:0 0 8px; font-size:21px; line-height:1.4; }
+    p { margin:0 0 14px; }
+    .lead { font-size:19px; max-width:35em; }
+    .small { font-size:14px; color:var(--muted); }
+    .hero-flow { display:grid; gap:11px; }
+    .flow-row { display:flex; align-items:center; gap:15px; background:#fff; border:1px solid var(--line); padding:12px 16px; min-height:67px; border-radius:6px; }
+    .flow-row b { display:block; line-height:1.4; }
+    .flow-row span:last-child { font-size:13px; color:var(--muted); }
+    .flow-dot { width:34px; height:34px; flex:none; border-radius:50%; display:grid; place-items:center; font-weight:800; background:var(--teal-light); color:var(--teal); }
+    nav { position:sticky; top:0; z-index:5; background:#fff; border-bottom:1px solid var(--line); overflow-x:auto; }
+    nav .wrap { display:flex; gap:24px; white-space:nowrap; }
+    nav a { color:var(--ink); text-decoration:none; font-size:14px; font-weight:700; padding:13px 0; }
+    nav a:hover { color:var(--teal); }
+    section { padding:58px 0; border-bottom:1px solid var(--line); scroll-margin-top:52px; }
+    section.tint { background:#f8faf9; }
+    .intro { max-width:760px; margin-bottom:27px; color:var(--muted); }
+    .section-head { margin-bottom:28px; }
+    .stat-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); }
+    .stat { padding:21px 20px 23px 0; min-height:125px; }
+    .stat + .stat { border-left:1px solid var(--line); padding-left:20px; }
+    .stat strong { display:block; font-size:32px; line-height:1.3; }
+    .stat span { display:block; color:var(--muted); font-size:14px; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:30px; }
+    .fact-list { padding:0; margin:0; list-style:none; }
+    .fact-list li { padding:11px 0; border-bottom:1px solid var(--line); }
+    .note { padding:17px 20px; background:var(--gold-light); border-left:4px solid var(--gold); border-radius:0 5px 5px 0; }
+    .note.teal { background:var(--teal-light); border-color:var(--teal); }
+    .note.coral { background:var(--coral-light); border-color:var(--coral); }
+    .note p:last-child { margin-bottom:0; }
+    .school-summary { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:27px; }
+    .region { border-top:4px solid var(--teal); padding:17px 0; }
+    .region:nth-child(2) { border-color:var(--coral); }
+    .region:nth-child(3) { border-color:var(--blue); }
+    .region b { font-size:21px; }
+    .region p { font-size:15px; color:var(--muted); margin:6px 0 0; }
+    .table-scroll { overflow-x:auto; }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th { text-align:left; background:#eaf1ef; font-size:13px; }
+    th,td { border-bottom:1px solid var(--line); padding:12px 13px; vertical-align:top; }
+    td:first-child { font-weight:700; white-space:nowrap; }
+    td a { display:block; line-height:1.45; margin:0 0 5px; }
+    .caption { font-size:13px; color:var(--muted); margin-top:10px; }
+    .route-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .route { border:1px solid var(--line); border-top:5px solid var(--teal); padding:20px; border-radius:5px; background:#fff; }
+    .route:nth-child(2) { border-top-color:var(--coral); }
+    .route:nth-child(3) { border-top-color:var(--blue); }
+    .route .symbol { display:inline-grid; place-items:center; width:42px; height:42px; border-radius:50%; background:var(--teal-light); color:var(--teal); font-weight:900; margin-bottom:13px; }
+    .route:nth-child(2) .symbol { background:var(--coral-light); color:var(--coral); }
+    .route:nth-child(3) .symbol { background:var(--blue-light); color:var(--blue); }
+    .route p { font-size:15px; }
+    .label { display:block; font-size:12px; font-weight:800; color:var(--muted); margin-top:15px; }
+    .arrow-strip { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:25px 0; padding:16px 20px; background:var(--ink); color:#fff; border-radius:5px; font-weight:700; }
+    .arrow-strip span { color:#b5eee1; }
+    .target-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:27px 0; }
+    .target { border-bottom:3px solid var(--teal); padding:10px 0 16px; }
+    .target:nth-child(2) { border-color:var(--coral); }
+    .target:nth-child(3) { border-color:var(--blue); }
+    .target strong { font-size:30px; display:block; line-height:1.35; }
+    .target span { font-size:14px; color:var(--muted); }
+    .material-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:25px; }
+    .material-grid ul { padding-left:21px; margin:8px 0; }
+    .material-grid li { margin:8px 0; }
+    .timeline { margin:27px 0 0; border-left:3px solid var(--line); padding-left:25px; }
+    .time-step { position:relative; padding:0 0 28px; }
+    .time-step::before { content:""; position:absolute; left:-34px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--teal); border:3px solid #fff; box-shadow:0 0 0 2px var(--teal); }
+    .time-step:last-child { padding-bottom:0; }
+    .time-step time { font-size:13px; font-weight:800; color:var(--teal); }
+    .time-step h3 { margin:3px 0 5px; }
+    .time-step p { color:var(--muted); margin:0; }
+    .appendix-item { padding:22px 0; border-top:1px solid var(--line); }
+    .appendix-item p { max-width:770px; }
+    .source-box { border-top:2px solid var(--ink); padding-top:22px; margin-top:28px; font-size:13px; color:var(--muted); }
+    .cost-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .cost-item { border-top:4px solid var(--teal); padding:17px 0; }
+    .cost-item:nth-child(2) { border-color:var(--coral); }
+    .cost-item:nth-child(3) { border-color:var(--blue); }
+    .cost-item strong { display:block; font-size:23px; line-height:1.35; margin:6px 0; }
+    .cost-item p { font-size:14px; }
+    .check-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px 30px; }
+    .check-item { border-top:1px solid var(--line); padding-top:16px; }
+    .check-item b { font-size:18px; }
+    .pay-row { display:grid; grid-template-columns:130px 1fr auto; align-items:center; gap:12px; border-bottom:1px solid var(--line); padding:12px 0; font-size:15px; }
+    .pay-track { height:12px; border-radius:2px; background:#e7eeeb; overflow:hidden; }
+    .pay-fill { height:100%; background:var(--teal); }
+    .pay-row:nth-child(2) .pay-fill { background:var(--coral); }
+    .pay-row:nth-child(3) .pay-fill { background:var(--blue); }
+    .path-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:24px 0; }
+    .path { border-top:3px solid var(--ink); padding-top:16px; }
+    .path p { font-size:15px; }
+    .forum-list { list-style:none; padding:0; margin:0; }
+    .forum-list li { border-top:1px solid var(--line); padding:15px 0; }
+    .forum-list b { display:block; }
+    .forum-list p { margin:3px 0; font-size:15px; }
+    footer { padding:30px 0 50px; color:var(--muted); font-size:13px; }
+    @media(max-width:800px) { .hero { grid-template-columns:1fr; gap:24px; } .stat-grid { grid-template-columns:repeat(2,1fr); } .stat:nth-child(3) { border-left:0; border-top:1px solid var(--line); padding-left:0; } .stat:nth-child(4) { border-top:1px solid var(--line); } .school-summary,.route-grid,.target-grid,.cost-grid,.path-grid { grid-template-columns:1fr; } .two-col,.material-grid,.check-grid { grid-template-columns:1fr; } .arrow-strip { display:block; } .arrow-strip span { display:block; margin:5px 0; } }
+    @media(max-width:520px) { body { font-size:16px; } .wrap { width:calc(100% - 30px); } .topline { flex-wrap:wrap; gap:3px 12px; } .hero { padding:28px 0 36px; } h1 { font-size:29px; overflow-wrap:anywhere; } .lead { font-size:17px; } section { padding:43px 0; } h2 { font-size:25px; } .stat strong { font-size:27px; } .stat { min-height:105px; padding:15px 8px 15px 0; } .stat + .stat { padding-left:12px; } .pay-row { grid-template-columns:1fr auto; gap:5px 10px; } .pay-track { grid-column:1/-1; grid-row:2; } table { min-width:780px; } }
+    @media print { @page { size:A4; margin:15mm; } nav { display:none; } body { font-size:11pt; } header,section.tint { background:#fff; } section { padding:18px 0; break-inside:avoid; } .hero { padding:10px 0; } .route,.region,.note,.time-step,.appendix-item { break-inside:avoid; } a { color:var(--ink); text-decoration:none; } .table-scroll { overflow:visible; } table { font-size:8pt; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topline"><span class="brand">我的留学规划 · 给家人的讨论稿</span><span>资料核对：2026 年 10 月</span></div>
+    <div class="wrap hero">
+      <div><div class="eyebrow">目标：2028 年入学</div><h1>我的留学规划，和家人一起商量</h1><p class="lead">先把方向选清楚，做好申请准备；再认真比较投入、生活与毕业后的工作。</p><p class="small">这是一份讨论稿。申请目标、已公布的数据和个人判断分别标明，便于一起做决定。</p></div>
+      <div class="hero-flow" aria-label="申请准备三步"><div class="flow-row"><span class="flow-dot">1</span><div><b>确定方向</b><span>人工智能技术 / 人工智能与商科</span></div></div><div class="flow-row"><span class="flow-dot">2</span><div><b>补足经历</b><span>相关实习、成绩和考试</span></div></div><div class="flow-row"><span class="flow-dot">3</span><div><b>提交申请</b><span>按每个专业的要求准备材料</span></div></div></div>
+    </div>
+  </header>
+  <nav aria-label="页面目录"><div class="wrap"><a href="#background">我的现状</a><a href="#schools">考虑的学校</a><a href="#directions">专业方向</a><a href="#materials">准备材料</a><a href="#timeline">时间安排</a><a href="#value">读研质量</a><a href="#costs">费用</a><a href="#safety">安全与生活</a><a href="#jobs">就业与收入</a><a href="#appendix">附录与来源</a></div></nav>
+  <main>
+    <section id="background"><div class="wrap">
+      <div class="section-head"><div class="num">00 / 起点</div><h2>我现在的情况</h2><p class="intro">我在西交利物浦大学读大三，本科是大数据专业，研究生想转向人工智能。人工智能（AI）就是让计算机从数据中学习，并帮助人完成识别、预测、生成内容等任务。相关工作见文末附录 4。</p></div>
+      <div class="stat-grid"><div class="stat"><strong>72 分</strong><span>大一均分 · 前 10% · 获半奖</span></div><div class="stat"><strong>68 分</strong><span>大二均分 · 前 25%</span></div><div class="stat"><strong>6.5 分</strong><span>当前雅思总分 · 单项最低 5.5</span></div><div class="stat"><strong>0 段</strong><span>目前尚无实习经历</span></div></div>
+      <div class="two-col"><div><h3>已有的项目与研究</h3><ul class="fact-list"><li><b>科研 A：</b>做出一张学术海报，产出有限。</li><li><b>科研 B：</b>人工智能 Agent（智能体）项目，有一定技术含量，目前是半成品，后续可继续完善。</li><li><b>正在做：</b>AI 麻将方向的论文综述，预计形成论文稿件；是否发表尚未确定。</li><li><b>明年：</b>计划参加比赛，可能挤占科研时间。</li></ul></div><div class="note teal"><h3>目前最重要的变化</h3><p>成绩需要回升；雅思单项需要提高；科研 B 还需做完整；最缺的是与申请方向相关的实习。接下来一年，优先做能直接影响申请结果的事。</p></div></div>
+    </div></section>
+
+    <section id="schools" class="tint"><div class="wrap">
+      <div class="section-head"><div class="num">01 / 学校</div><h2>目前考虑哪里、哪些学校</h2><p class="intro">以下学校来自机构老师的建议，是初步考察范围，不等于已经决定申请，也不代表一定能录取。先看具体专业，再判断学校是否适合。</p></div>
+      <div class="school-summary"><div class="region"><b>香港</b><p>香港科技大学、香港理工大学。</p></div><div class="region"><b>新加坡</b><p>南洋理工大学；新加坡国立大学作为难度较高的尝试。</p></div><div class="region"><b>英国</b><p>帝国理工学院（IC）、伦敦大学学院（UCL）、爱丁堡大学、布里斯托大学。</p></div></div>
+      <p>下面是各校官网能查到的<b>相关专业例子</b>。同一学校不一定三个方向都有完全对应的项目；表格只是帮助理解“学什么”，最终申请名单还要按课程、门槛和个人兴趣筛选。</p>
+      <div class="table-scroll"><table><thead><tr><th>学校</th><th>人工智能技术方向</th><th>人工智能结合商科方向</th><th>数据科学方向</th></tr></thead><tbody>
+        <tr><td>香港科技大学</td><td><a href="https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-ai" target="_blank" rel="noopener">人工智能理学硕士</a></td><td><a href="https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-aie/course-schedule" target="_blank" rel="noopener">人工智能与创业相关项目*</a></td><td><a href="https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-bdt" target="_blank" rel="noopener">大数据技术理学硕士</a></td></tr>
+        <tr><td>香港理工大学</td><td><a href="https://www.polyu.edu.hk/dsai/study/tpg/mscaibd/entrance-requirements/" target="_blank" rel="noopener">人工智能与大数据计算理学硕士</a></td><td><a href="https://www.polyu.edu.hk/mm/study/backup/taught-postgraduate-programmes/master-of-science-in-business-analytics/" target="_blank" rel="noopener">商业分析理学硕士</a></td><td><a href="https://www.polyu.edu.hk/dsai/study/tpg/mscdsa/entrance-requirements/" target="_blank" rel="noopener">数据科学与分析理学硕士</a></td></tr>
+        <tr><td>南洋理工大学</td><td><a href="https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-artificial-intelligence" target="_blank" rel="noopener">人工智能理学硕士</a></td><td><a href="https://www.ntu.edu.sg/engineering/coe-programmes/graduate/coe-programme-detail/master-of-science-in-enterprise-artificial-intelligence" target="_blank" rel="noopener">企业人工智能理学硕士</a></td><td><a href="https://www.ntu.edu.sg/spms/about-us/mathematics/grad/msc-in-analytics" target="_blank" rel="noopener">分析学理学硕士</a></td></tr>
+        <tr><td>新加坡国立大学</td><td><a href="https://www.comp.nus.edu.sg/programmes/pg/mcomp-ai/admissions/" target="_blank" rel="noopener">人工智能计算硕士</a></td><td><a href="https://scale.nus.edu.sg/programmes/graduate/msc-%28artificial-intelligence-innovation%29" target="_blank" rel="noopener">人工智能与创新理学硕士</a></td><td><a href="https://www.math.nus.edu.sg/cdsml/ms-dsml/dsml-prospective-students/" target="_blank" rel="noopener">数据科学与机器学习理学硕士</a></td></tr>
+        <tr><td>帝国理工学院</td><td><a href="https://www.imperial.ac.uk/study/courses/postgraduate-taught/computing-artificial-intelligence-msc/" target="_blank" rel="noopener">计算（人工智能与机器学习）理学硕士</a></td><td><a href="https://www.imperial.ac.uk/study/courses/postgraduate-taught/2026/applications-innovation/" target="_blank" rel="noopener">人工智能应用与创新理学硕士</a></td><td><a href="https://www.imperial.ac.uk/study/courses/postgraduate-taught/statistics-data-science/" target="_blank" rel="noopener">统计学（数据科学与机器学习）理学硕士</a></td></tr>
+        <tr><td>伦敦大学学院</td><td><a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc" target="_blank" rel="noopener">机器学习理学硕士</a></td><td><a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/business-analytics-msc" target="_blank" rel="noopener">商业分析理学硕士</a></td><td><a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc" target="_blank" rel="noopener">数据科学与机器学习理学硕士</a></td></tr>
+        <tr><td>爱丁堡大学</td><td><a href="https://study.ed.ac.uk/programmes/postgraduate-taught/107-artificial-intelligence" target="_blank" rel="noopener">人工智能理学硕士</a></td><td><a href="https://study.ed.ac.uk/programmes/postgraduate-taught/1138-ai-for-business" target="_blank" rel="noopener">面向商业的人工智能理学硕士</a></td><td><a href="https://study.ed.ac.uk/programmes/postgraduate-taught/902-data-science" target="_blank" rel="noopener">数据科学理学硕士</a></td></tr>
+        <tr><td>布里斯托大学</td><td><a href="https://www.bristol.ac.uk/study/postgraduate/taught/msc-artificial-intelligence/" target="_blank" rel="noopener">人工智能理学硕士</a></td><td><a href="https://www.bristol.ac.uk/study/postgraduate/taught/msc-artificial-intelligence-for-business/" target="_blank" rel="noopener">面向商业的人工智能理学硕士</a></td><td><a href="https://www.bristol.ac.uk/study/postgraduate/taught/msc-data-science-for-business/" target="_blank" rel="noopener">面向商业的数据科学理学硕士</a></td></tr>
+      </tbody></table></div>
+      <p class="caption">* 香港科技大学“人工智能与创业”项目的学位名称已有调整信息，2028 入学时须重新核对。表中专业名称为中文意译，点击可看学校英文原页。</p>
+      <div class="note" style="margin-top:24px"><b>老师的建议与待核实之处</b><p>机构老师认为爱丁堡大学的人工智能较强；其官网确有人工智能硕士和相关研究介绍。老师还提到布里斯托某人工智能项目与国内机器人企业有联系、可考虑英国就业；目前尚未确认具体项目及合作方式，不能把这条当成录取或就业保证。</p></div>
+    </div></section>
+
+    <section id="directions"><div class="wrap">
+      <div class="section-head"><div class="num">02 / 专业</div><h2>我还在选择哪一种人工智能方向</h2><p class="intro">“人工智能”不是一种单一工作。同样使用人工智能，有的人负责开发技术，有的人负责把技术做成好用的产品，也有人专门从数据中寻找规律。</p></div>
+      <div class="route-grid">
+        <article class="route"><span class="symbol">01</span><h3>技术方向</h3><p>学算法、机器学习和编程。简单说，就是训练和改进能识别、预测或生成内容的计算机系统。</p><span class="label">可能的工作</span><p>算法工程师、机器学习工程师、人工智能研发工程师。</p><span class="label">对应的实习</span><p>算法开发、模型训练、人工智能应用开发等能展示代码和技术成果的岗位。</p></article>
+        <article class="route"><span class="symbol">02</span><h3>人工智能结合商科</h3><p><b>商科</b>研究企业如何经营：了解客户需要、设计产品、做市场和经营决策。这个方向是学习怎样把人工智能技术用到真实业务中。</p><span class="label">可能的工作</span><p>人工智能产品经理、商业分析师、人工智能解决方案或业务策略岗位。产品经理要弄清用户问题，并协调团队做出产品。</p><span class="label">对应的实习</span><p>人工智能产品、商业分析、解决方案、科技企业的业务与数据应用岗位。</p></article>
+        <article class="route"><span class="symbol">03</span><h3>数据科学方向</h3><p>处理、分析数据，用统计和模型找到规律，再把结论讲清楚，帮助企业判断下一步怎么做。</p><span class="label">可能的工作</span><p>数据分析师、数据科学家、商业数据分析师。</p><span class="label">我的态度</span><p>与本科学习衔接较自然，但个人兴趣暂时较弱，作为备选。</p></article>
+      </div>
+      <div class="arrow-strip">先选主申方向 <span>→</span> 找对应实习 <span>→</span> 用实习成果支持申请</div>
+      <p>目前<b>技术方向与结合商科方向尚未决定</b>。机构老师认为技术岗位起薪相对稳定、收入上限未必最高；结合商科方向竞争来源更广、收入波动可能更大，但发展空间取决于个人能力和机会。这是老师的判断，尚无可直接比较的同口径薪酬数据，具体收入将在后半篇单独核实。</p>
+      <div class="note teal"><b>关于国外就业</b><p>我愿意考虑毕业后留在国外工作；机构老师提醒这条路难度较高。这里先把它作为一种可能的就业路径，不将任何学校或专业写成“毕业就能留下工作”。</p></div>
+    </div></section>
+
+    <section id="materials" class="tint"><div class="wrap">
+      <div class="section-head"><div class="num">03 / 准备</div><h2>申请需要拿出什么</h2><p class="intro">一部分是分数和考试；另一部分是能说明“我学过、做过、适合这个专业”的真实经历与材料。</p></div>
+      <h3>分数目标</h3><div class="target-grid"><div class="target"><strong>70 分以上</strong><span>大三专业平均分目标；为申请更有竞争力，也为争取一等学位打基础。</span></div><div class="target"><strong>7 / 6.5</strong><span>雅思目标：总分 7，听说读写每项不低于 6.5。</span></div><div class="target"><strong>325 分</strong><span>GRE 备考目标；是否必须提交，要按具体专业判断。</span></div></div>
+      <div class="material-grid"><div><h3>这些考试是什么</h3><ul><li><b>英制学位等级：</b>英国本科常见“一等”“二等一”等等级。利物浦大学的课程分数说明中，70 分及以上属于一等分数段；最终学位等级还涉及课程权重和校规。大三达到 70+ 是我自己的阶段目标，并不等于提前拿到一等学位。</li><li><b>雅思：</b>检验英语听、说、读、写的考试。当前总分 6.5、最低单项 5.5，因此计划重考。</li><li><b>GRE：</b>一种研究生入学考试，考英语文字推理、数学推理和分析写作。325 指文字与数学两部分合计分数，两项满分合计 340；写作单独计分。</li></ul></div><div><h3>这些材料是什么</h3><ul><li><b>个人陈述（Personal Statement，PS）：</b>向学校解释为什么选择这个专业、具备什么能力、未来想做什么。每个项目应按课程特点调整。</li><li><b>简历（Curriculum Vitae，CV）：</b>用一两页列出成绩、项目、实习和技能。</li><li><b>推荐信：</b>计划请两位了解我学习或项目表现的老师写评价；实际封数依项目要求提交。</li><li><b>面试：</b>有些项目会进一步询问动机、专业基础或项目经历。</li></ul></div></div>
+      <div class="note coral"><b>经历的优先顺序</b><p>与申请方向直接相关的实习 → 科研与项目 → 竞赛 → 其他经历。现在尚无实习，因此第一段实习是近期重点；科研 B 和论文综述也要尽量形成可以展示的成果。</p></div>
+      <div class="note" style="margin-top:16px"><b>官网核对后的重要修正</b><p>“香港、新加坡人工智能专业都必须考 GRE”不准确。新国立人工智能计算硕士目前要求 GRE 或 GMAT，并列有 GRE 参考门槛；南洋理工人工智能硕士写明 GRE 可选，企业人工智能硕士当前公开要求未列 GRE 为必交。GRE 325 仍可作为冲刺目标，但应先确定目标项目，再决定备考投入。奖学金也不是统一“75 分线”，西浦公开的奖学金门槛会因专业、年级和排名变化。</p><p class="small">核对依据：<a href="https://www.comp.nus.edu.sg/programmes/pg/mcomp-ai/admissions/" target="_blank" rel="noopener">新国立人工智能计算硕士</a>、<a href="https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-artificial-intelligence" target="_blank" rel="noopener">南洋理工人工智能硕士</a>、<a href="https://www.ntu.edu.sg/engineering/coe-programmes/graduate/coe-programme-detail/master-of-science-in-enterprise-artificial-intelligence" target="_blank" rel="noopener">南洋理工企业人工智能硕士</a>、<a href="https://www.xjtlu.edu.cn/wp-content/uploads/2025/09/Threshold_for_AY202526_UG_Scholarship.pdf" target="_blank" rel="noopener">西浦奖学金分数表</a>。</p></div>
+    </div></section>
+
+    <section id="timeline"><div class="wrap">
+      <div class="section-head"><div class="num">04 / 时间线</div><h2>从现在到申请季</h2><p class="intro">2028 年入学是目标。下面是我希望达到的节奏，不是学校统一规定的截止日。</p></div>
+      <div class="timeline"><div class="time-step"><time>2026 年 9—12 月 · 大三上</time><h3>确定主申方向</h3><p>比较技术方向与结合商科方向；在 12 月前作出初步选择，寻找强相关的寒假实习。同步稳住课程成绩，安排雅思与 GRE 备考。</p></div><div class="time-step"><time>2027 年寒假</time><h3>第一段相关实习</h3><p>计划实习约两个月，尽量做出可以具体写进简历的成果。</p></div><div class="time-step"><time>2027 年大三下 · 至 6 月</time><h3>第二段实习与阶段成绩</h3><p>计划完成第二段相关实习；争取大三专业平均分 70+、雅思达到目标，并按最终申请项目需求考出 GRE。比赛与科研按时间和重要性取舍。</p></div><div class="time-step"><time>2027 年 6—9 月 · 升大四暑假</time><h3>第三段实习与申请材料</h3><p>有机会再做一段相关实习；整理科研 B、论文综述与比赛成果；准备简历、联系推荐老师，并针对不同学校专业修改个人陈述。</p></div><div class="time-step"><time>2027 年 9 月以后</time><h3>按项目轮次递交申请</h3><p>跟踪每个项目的开放日期、截止日期、材料要求及面试通知。部分项目可能要求更早准备；2028 入学的正式时间以届时官网为准。</p></div></div>
+      <div class="note" style="margin-top:28px"><b>关于“明年 6 月提前批”</b><p>2027 年 6 月可以作为个人备齐考试与经历的内部节点。目前查到的南洋理工企业人工智能硕士公开申请窗口为当年 9 月至次年 3 月，并不能据此认定 2028 入学项目有“2027 年 6 月截止的提前批”。待 2028 年入学简章发布后再按项目更新。<a href="https://www.ntu.edu.sg/pace/for-individuals/ntu-interdisciplinary-graduate-programme/Master-of-Science-In-Enterprise-Artificial-Intelligence-Programme" target="_blank" rel="noopener">查看项目官网</a></p></div>
+      <div class="note teal" style="margin-top:16px"><b>如果目标没有全部达成</b><p>先看具体项目的最低要求与截止日期，再调整学校和专业名单、申请轮次或准备时间。一次考试、实习或申请结果不会决定整个人生。到 2027 年中，按实际成绩和经历重新评估，比现在预设所有结果更可靠。</p></div>
+    </div></section>
+
+    <section id="value" class="tint"><div class="wrap">
+      <div class="section-head"><div class="num">05 / 读研质量</div><h2>怎样判断这一年读得值不值</h2><p class="intro">学校名气有参考价值，但对就业更直接的是：课程能否补上所选岗位需要的能力，能否做出可展示的项目，以及学校能提供怎样的实践机会。</p></div>
+      <div class="check-grid"><div class="check-item"><b>课程是否对口</b><p>技术方向看算法、机器学习、编程和工程实践；结合商科方向看企业问题、产品设计、数据决策与人工智能应用。不能只凭专业名称里的“人工智能”判断。</p></div><div class="check-item"><b>项目是否能做出来</b><p>优先看是否有毕业项目、与企业合作的任务或实习机会，以及最后能否拿出作品说明“我解决了什么问题”。</p></div><div class="check-item"><b>实际申请门槛</b><p>课程越对口，数学、编程和本科课程基础可能越重要。比如<a href="https://study.ed.ac.uk/programmes/postgraduate-taught/107-artificial-intelligence" target="_blank" rel="noopener">爱丁堡人工智能硕士</a>列有编程与数学背景要求。</p></div><div class="check-item"><b>不要把宣传当保证</b><p>例如<a href="https://www.bristol.ac.uk/study/postgraduate/taught/msc-artificial-intelligence/" target="_blank" rel="noopener">布里斯托人工智能硕士</a>官网写有可选行业项目；这说明存在实践形式，不等于每个学生都能拿到某家企业的实习或工作。</p></div></div>
+      <div class="note teal" style="margin-top:25px"><b>选校时真正要问的三个问题</b><p>这门课能补足我当前的能力吗？毕业时我能带走什么作品或经历？这一年的学费和机会成本，是否与可能得到的工作机会相称？</p></div>
+    </div></section>
+
+    <section id="costs"><div class="wrap">
+      <div class="section-head"><div class="num">06 / 费用</div><h2>一年的花销，不能只看学费</h2><p class="intro">预算尚未确定。先用目前官网能核对的项目做例子，按原币种列出，避免把汇率和未来学费算成一个看似精确、实际会变的人民币总数。</p></div>
+      <div class="cost-grid"><div class="cost-item"><b>香港例子</b><strong>40 万港币</strong><p><a href="https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-ai" target="_blank" rel="noopener">香港科技大学人工智能硕士</a>公布的 2027 年秋季入学学费。该校估算校外租房每月约 5,200—12,700 港币，另需算吃饭、交通等；校内宿位不能预设一定获得。<a href="https://shrl.hkust.edu.hk/residential-halls/overview" target="_blank" rel="noopener">住宿依据</a></p></div><div class="cost-item"><b>新加坡例子</b><strong>60,085 新币</strong><p><a href="https://www.ntu.edu.sg/engineering/coe-programmes/graduate/coe-programme-detail/master-of-science-in-enterprise-artificial-intelligence" target="_blank" rel="noopener">南洋理工企业人工智能硕士</a>公布的 2027 学年学费。南洋理工另一学院给国际学生的生活费参考约每月 1,300—1,600 新币，包含校内住宿估算；实际租房可能不同。<a href="https://www.ntu.edu.sg/nie/admissions/graduate-education/international-students" target="_blank" rel="noopener">生活费依据</a></p></div><div class="cost-item"><b>英国例子</b><strong>36,700 英镑</strong><p><a href="https://www.bristol.ac.uk/study/postgraduate/taught/msc-artificial-intelligence/" target="_blank" rel="noopener">布里斯托人工智能硕士</a>公布的 2027 年国际生学费。城市不同，生活费不能直接套用伦敦价格；后续应按最终学校的住宿和生活费页面另算。</p></div></div>
+      <div class="note"><b>最终家庭预算的算法</b><p>项目学费 + 住宿和日常生活 + 签证与保险 + 往返交通 + 申请与考试费用 + 应急预留。奖学金只在实际获得后从总额扣除。上面的价格对应不同专业和年份，仅是量级参考，2028 年入学需重新核对。</p></div>
+    </div></section>
+
+    <section id="safety" class="tint"><div class="wrap">
+      <div class="section-head"><div class="num">07 / 安全与生活</div><h2>父母关心的安全，具体看什么</h2><p class="intro">安全不宜用“哪个国家绝对安全”概括。到拿到录取后，应按学校、城市和住宿地点逐项确认。</p></div>
+      <div class="check-grid"><div class="check-item"><b>住在哪里</b><p>先查校内住宿能否申请、是否保证；校外租房看通勤路线、合同、押金和合租情况。租房位置对日常安全和花销都有影响。</p></div><div class="check-item"><b>生病怎么办</b><p>确认当地医疗安排、学校提供的医疗或保险要求，以及急诊和常用药获取方式。具体保障范围以录取年度的官方要求和保单为准。</p></div><div class="check-item"><b>遇事找谁</b><p>出发前保存学校学生支持部门、宿舍管理、当地紧急电话和中国驻当地使领馆联系方式；与家人约定联系频率。</p></div><div class="check-item"><b>避免额外风险</b><p>学费只按学校官方指引缴纳；租房和实习不轻信“保证录取”“保证工作”等承诺。涉及押金或合同，先核实机构身份。</p></div></div>
+    </div></section>
+
+    <section id="jobs"><div class="wrap">
+      <div class="section-head"><div class="num">08 / 就业</div><h2>毕业后，主要看回国，也保留当地求职</h2><p class="intro">我认为回国就业的可能性更大，但也想争取留在就读地工作。因此准备时要让同一段实习和项目尽量能用于两边求职。</p></div>
+      <h3>回国能看什么岗位</h3><p>技术方向可投算法、机器学习和人工智能应用开发；结合商科方向可投人工智能产品、解决方案与商业分析；数据科学可投数据分析、数据开发等。<a href="https://job.xiaohongshu.com/campus/position?jobProjects=campus_spring_26" target="_blank" rel="noopener">小红书公开校招页</a>可看到国内企业确有算法、人工智能产品和数据类岗位，但每年招聘量和岗位要求会变化。</p>
+      <h3 style="margin-top:26px">中国真实薪资数据：先看口径</h3><p>下图来自中国劳动和社会保障科学研究院发布的 <a href="https://www.mohrss.gov.cn/SYrlzyhshbzb/laodongguanxi_/fwyd/202607/t20260708_579828.html" target="_blank" rel="noopener">2026 年第一季度招聘薪酬数据</a>。它统计招聘网站上企业标出的<b>平均月薪</b>，混合不同工作年限，<b>不是应届毕业生实际拿到手的工资</b>；“产品经理”也不专指人工智能产品经理。</p>
+      <div class="note teal"><b>先看应届生岗位</b><p>智联招聘《2026 年三季度人才市场热点快报》统计：面向应届生的人工智能工程师岗位，平均招聘月薪为 <b>17,775 元</b>；数据工程师为 <b>10,882 元</b>。这是 2026 年招聘广告的平均标价，不是所有应届生的实际起薪，更不是 2029 年毕业后的工资。<a href="https://www.jingjiribao.cn/static/detail.jsp?id=689642" target="_blank" rel="noopener">查看报道及数据口径</a></p></div>
+      <p style="margin-top:22px">下面看包含不同工作年限的岗位整体招聘标价，主要用于理解三种岗位的市场量级，不能直接代入个人预算。</p>
+      <div class="pay-row"><b>算法工程师</b><span class="pay-track"><span class="pay-fill" style="display:block;width:100%"></span></span><strong>长三角 2.19 万元/月</strong></div>
+      <div class="pay-row"><b>产品经理</b><span class="pay-track"><span class="pay-fill" style="display:block;width:79%"></span></span><strong>长三角 1.72 万元/月</strong></div>
+      <div class="pay-row"><b>数据分析师</b><span class="pay-track"><span class="pay-fill" style="display:block;width:55%"></span></span><strong>珠三角 1.21 万元/月</strong></div>
+      <p class="caption">数据分析师与前两项来自不同地区，不能把这三根柱子当成同城、同经验的岗位收入排名。招聘标价也不等于实际录用薪酬、年终奖或税后收入。</p>
+      <p>再看一个更接近校招的<b>具体岗位例子</b>：牛客上曾公布一份深圳人工智能产品经理校招岗位，标价为每月 <a href="https://www.nowcoder.com/jobs/detail/426234" target="_blank" rel="noopener">1 万—1.5 万元、13 薪</a>。这只是一个岗位的广告，不代表所有应届生的起薪。等主申方向和回国就业城市确定，再按同城、同届、同岗位收集更多样本。</p>
+      <div class="note coral" style="margin-top:18px"><b>对先前判断的修正</b><p>现有数据不支持“技术岗收入上限一定不高、商科方向上限一定更高”的结论。收入还受岗位、城市、公司、工作年限和个人能力影响。现阶段更可靠的做法，是先选自己能胜任且愿意持续做的工作。</p></div>
+      <h3 style="margin-top:30px">国内求职论坛怎么看</h3><p class="small">下面是个人经历与讨论，不是统计样本；帖子的自述背景和结果无法独立核实。只取与准备行动有关的共通提醒。</p>
+      <ul class="forum-list"><li><b>牛客：Agent 开发的求职经历</b><p>一位自述有计算机本科、软件硕士与相关实习的求职者，记录了多场面试，并指出面试会深入追问项目为什么这样设计。这提示科研 B 要从“半成品”推进到能演示、能解释取舍和结果的完整项目。<a href="https://ac.nowcoder.com/discuss/1626144?channel=-1&source_id=0&type=0" target="_blank" rel="noopener">看原帖</a></p></li><li><b>V2EX：香港读研者同时看内地与香港岗位</b><p>一位自述在香港读硕士的求职者，同时寻找深圳、广州、香港的人工智能工程化与数据岗位，并详细列出可展示的项目成果。这说明“回国”和“留当地”可以并行准备。<a href="https://cn.v2ex.com/t/1211169" target="_blank" rel="noopener">看原帖</a></p></li><li><b>V2EX：数据分析招聘讨论</b><p>一位招聘者写出岗位约每月 1 万元加年终分红，并讨论不同企业的数据规模、实际工作内容差别很大。它提醒我们不能只靠“数据分析师”这个名称估计工资和成长。<a href="https://www.v2ex.com/t/1227330" target="_blank" rel="noopener">看原帖</a></p></li></ul>
+      <h3 style="margin-top:28px">如果想留在就读地工作</h3><div class="path-grid"><div class="path"><h3>香港</h3><p>目前政策下，符合条件的非本地毕业生可通过留港就业安排申请逗留；近期毕业生申请时不必先拿到工作，通常可获 24 个月逗留。<a href="https://www.immd.gov.hk/hks/services/visas/IANG.html" target="_blank" rel="noopener">香港入境处</a></p></div><div class="path"><h3>新加坡</h3><p>符合条件的当地高校毕业生可申请一年、不可续期的求职长期探访准证；真正开始工作还需要符合雇主申请的工作准证要求。<a href="https://www.ica.gov.sg/information-and-e-services/long-term-visit-and-study/long-term-visit-pass/long-term-visit-pass-application-renewal/graduate-from-an-institute-of-higher-learning-seeking-employment-in-singapore" target="_blank" rel="noopener">移民局求职准证</a> · <a href="https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility" target="_blank" rel="noopener">工作准证门槛</a></p></div><div class="path"><h3>英国</h3><p>目前规定，2027 年起申请毕业生签证的合格硕士毕业生通常可在英国停留 18 个月；之后若要长期工作，仍需符合相应工作签证条件。<a href="https://www.gov.uk/graduate-visa" target="_blank" rel="noopener">英国政府说明</a></p></div></div>
+      <div class="note teal"><b>当地收入不能直接换算成“赚得更多”</b><p>例如英国就业指导网站给机器学习工程师毕业入门岗位的参考为每年 <a href="https://www.prospects.ac.uk/job-profiles/machine-learning-engineer/" target="_blank" rel="noopener">3.3 万—3.9 万英镑</a>；这是英国岗位参考，不是这些学校毕业生的保证薪资。比较收入时还要扣除当地税费和生活费，并考虑能否找到工作。不同国家和岗位的样本不能混成一个平均数。</p></div>
+      <div class="note" style="margin-top:16px"><b>和家人最后要决定</b><p>可承受的总预算是多少；主申技术还是人工智能结合商科；回国优先考虑哪些城市；若留当地求职，在多长时间内尝试、何时转为回国求职。拿到具体录取后，再用对应项目的学费和更新的岗位数据做最终比较。</p></div>
+    </div></section>
+
+    <section id="appendix" class="tint"><div class="wrap">
+      <div class="section-head"><div class="num">附录 / 给家人的补充说明</div><h2>四个需要解释清楚的问题</h2><p class="intro">这一部分帮助快速理解学校和工作，不替代对具体专业申请要求的核对。</p></div>
+      <div class="appendix-item"><h3>附录 1 · 香港学校</h3><p><b>香港科技大学：</b>这份计划重点看人工智能、大数据技术等偏理工的专业。<b>香港理工大学：</b>可同时看人工智能与大数据、数据科学、商业分析等专业。两所学校都在香港，但具体课程、申请要求和费用应分别比较；学校名字不能代替专业选择。</p><p class="small">学校项目入口：<a href="https://seng.hkust.edu.hk/academics/taught-postgraduate" target="_blank" rel="noopener">香港科技大学工程学院</a> · <a href="https://www.polyu.edu.hk/dsai/" target="_blank" rel="noopener">香港理工大学数据科学与人工智能学系</a></p></div>
+      <div class="appendix-item"><h3>附录 2 · 新加坡学校</h3><p><b>南洋理工大学：</b>同时有偏技术的人工智能硕士，以及更强调企业应用、人工智能产品管理的企业人工智能硕士。<b>新加坡国立大学：</b>可考察人工智能计算、人工智能与创新等项目；我把它放在较有挑战性的申请范围。两校专业的 GRE 和工作经历要求不同。</p><p class="small">学校项目入口：<a href="https://www.ntu.edu.sg/education/graduate-programme" target="_blank" rel="noopener">南洋理工大学研究生项目</a> · <a href="https://www.comp.nus.edu.sg/graduate/" target="_blank" rel="noopener">新加坡国立大学计算机学院</a></p></div>
+      <div class="appendix-item"><h3>附录 3 · 英国学校</h3><p><b>帝国理工学院：</b>可看人工智能与机器学习、人工智能应用与创新。<b>伦敦大学学院：</b>可看机器学习、数据科学与商业分析。<b>爱丁堡大学：</b>人工智能硕士提供机器学习、机器人等相关课程。<b>布里斯托大学：</b>同时有人工智能、面向商业的人工智能等项目。机构老师提到的布里斯托与国内机器人企业联系，仍需确认具体合作项目。</p><p class="small">项目入口：<a href="https://www.imperial.ac.uk/study/courses/" target="_blank" rel="noopener">帝国理工学院</a> · <a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees" target="_blank" rel="noopener">伦敦大学学院</a> · <a href="https://study.ed.ac.uk/programmes/postgraduate-taught" target="_blank" rel="noopener">爱丁堡大学</a> · <a href="https://www.bristol.ac.uk/study/postgraduate/taught/" target="_blank" rel="noopener">布里斯托大学</a></p></div>
+      <div class="appendix-item"><h3>附录 4 · 大数据转向人工智能，能做什么工作</h3><p>本科学的大数据，是收集、整理和分析数据；人工智能在此基础上进一步学习如何让计算机利用数据完成任务。转方向不意味着原来的学习白费：编程、数学和数据处理仍是基础。技术路线可能做算法与机器学习；商科结合路线可能做人工智能产品或企业应用；数据科学路线可能做数据分析与建模。岗位名称相似，但实际工作要看企业和招聘要求。</p></div>
+      <div class="source-box"><b>阅读说明</b><p>“我的情况与目标”来自本人提供的信息；“机构老师认为”是咨询意见；带学校链接的专业名称和申请要求来自学校公开页面；国内薪资的主表是中国劳动和社会保障科学研究院的招聘广告统计；论坛内容仅是个人经验。页面核对于 2026 年 10 月，面向 2028 入学的简章可能尚未发布，届时需重新核对。GRE 分数解释参考 <a href="https://www.ets.org/gre/score-users/about/general-test/scoring.html" target="_blank" rel="noopener">ETS 考试官方说明</a>；英制学位分数段参考 <a href="https://www.liverpool.ac.uk/media/livacuk/tqsd/code-of-practice-on-assessment/appendix_A_2011-12_cop_assess.pdf" target="_blank" rel="noopener">利物浦大学评分说明</a>。</p></div>
+    </div></section>
+  </main>
+  <footer><div class="wrap">留学规划 · 完整讨论稿　|　申请准备、留学质量、安全、费用与就业　|　2028 入学要求和价格以后续学校官网为准</div></footer>
+</body>
+</html>
